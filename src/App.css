@@ -1,38 +1,125 @@
+body {
+  background-image: url(background.jpg);
+  height: 100vh;
+  background-size: cover;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .App {
-  text-align: center;
+  margin: 17px;
+  background-color: rgb(189, 208, 215, 0.5);
+  height: 95%;
+  /* min-height: 95%;
+  max-height: fit-content; */
+  background-attachment: fixed;
+  padding: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  margin-left: 50px;
+  padding: 40px;
   display: flex;
-  flex-direction: column;
+  align-items: baseline;
+}
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  color: rgb(57,72,41); 
+}
+
+img {
+  width:180px;
+  height: auto;
+}
+.input {
+  background-color: transparent;
+  padding: 10px;
+}
+
+.btn {
+  padding: 10px;
+}
+.input {
+  width:40%;
+  font-family: "Ubuntu", sans-serif;
+}
+.btn {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  width: 20%;
+  font-size: 15px;
+  letter-spacing: 4px;
+}
+.text-under p{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10px;
+}
+.nutrition {
+  margin-left: 50px;
+}
+.text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+table {
+  width: 70%;
+  border-bottom: 2px solid blue;
+  padding: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.label {
+  width: 60%;
+}
+.units {
+  width: 10%;
+}
+.arrow {
+  width:40px
+}
+@media all and (max-width:500px) {
+  
+.App {
+  margin: 10px;
+  padding: 10px;
+}
+h1{
+  font-size: 30px;
+}
+img {
+  width: 100px; 
+}
+.header {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 20px;
+  padding: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.nutrition {
+  margin-left: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input {
+  width: 60%;
+}
+.btn {
+  width: 30%;
+}
+table {
+  width: 100%;
+  padding: 0px;
+}
+.text {
+  font-size: 20px;
+}
+}
+@media all and (max-width:350px) {
+  .nutrition {
+    margin-left: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .btn {
+    letter-spacing: normal;
   }
 }
