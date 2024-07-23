@@ -1,3 +1,11 @@
+### Nutrition app
+This app uses API from https://developer.edamam.com/. When you enter the ingredients and click search you will see a table with nutrition information of the ingredient/ingredients that you've entered.
+This app uses API, API POST request, map method and sweet alert.
+
+There was a challenge with displaying all nutrition factors and their values.
+I also would like to add buttons that will filter the information on the screen depending if you want to see minerals, vitamins, or main nutrients only.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +76,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# to use this project
+First of all you need to get registered at https://developer.edamam.com/. Then pick one of three API, in this case we use Nutrition Analysis API. You will need to create your own key and ID for the project.
+
+
+If you have any other question you can send me an email @ katehryaznykh@gmail.com with subject "Git question-issue"
+
+You can use this as learning material
