@@ -12,8 +12,6 @@ body {
   margin: 17px;
   background-color: rgb(189, 208, 215, 0.5);
   height: 95%;
-  /* min-height: 95%;
-  max-height: fit-content; */
   background-attachment: fixed;
   padding: 20px;
 }
@@ -41,6 +39,9 @@ img {
 
 .btn {
   padding: 10px;
+  background-color: rgb(68,107,36);
+  border: none;
+  color: antiquewhite;
 }
 .input {
   width:40%;
@@ -68,7 +69,7 @@ img {
 }
 table {
   width: 70%;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid rgb(68,107,36);
   padding: 20px;
   font-family: "Ubuntu", sans-serif;
 }

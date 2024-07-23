@@ -3,6 +3,8 @@ import image from './Edamam_Badge_Transparent.svg'
 import './App.css';
 import LoaderPage from './Loader/LoaderPage';
 import NutritionTable from './NutritionTable';
+import Swal from 'sweetalert2';
+import {v4 as uuidv4} from 'uuid';
 
 function App() {
   const [myInput, setMyInput] = useState ();
@@ -31,7 +33,13 @@ function App() {
       }
       else {
         setLoaderState(false);
-        alert('ingredients entered incorrectly');
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Ingredients entered incorrectly!",
+          footer: 'The correct format should be "1 cup rice, 10 oz chickpeas", etc.'
+        });
+        
       }
     
   }
@@ -57,7 +65,6 @@ function App() {
     <div className="App">
       <div className='container'>
         {loaderState && <LoaderPage/>}
-
       <div className='header'>
         <h1>Nutrition Analysis</h1>
         <div id="edamam-badge" data-color="none"><img src={image} alt="edamam"/></div>
@@ -76,10 +83,12 @@ function App() {
       {nutrition && Object.values(nutrition.totalNutrients)
         .map(({label, quantity, unit})=>{
           return(
+            <table key={uuidv4()}  className="nutrition">
           <NutritionTable
           label = {label}
           quantity = {quantity}
           unit = {unit}/>
+          </table>
         )})
       }
       </div>
